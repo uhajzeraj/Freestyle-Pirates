@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <group address="5.111.87.188" port="1975"/>
+    <gate address="5.111.87.188" port="1976"/>
+</configuration>

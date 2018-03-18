@@ -1,0 +1,3 @@
+//Serial	NPC Name	NPC Type	Chrindex ID	Coordinates starting point	Coordination Goal	NPC placement	Spare 1	Spare 2	NPC Script	info manage	Test Status
+1	Navy Frontline Commander	1	798	10	31000,11300	31000,11300	180	Sacred War	128	0	roico_talk001	0
+2	Pirate Frontline Commander	1	747	10	30000,51500	30000,51500	355	Sacred War	128	0	roico_talk002	0

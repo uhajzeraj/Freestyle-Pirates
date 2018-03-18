@@ -1,0 +1,23 @@
+//序号	NPC名字	NPC类型	Chr索引ID	小地图显示	坐标起点	坐标终点	NPC面向	区域	区域编号	NPC脚本	消息處理	检测状态	
+//0	Sandra	1	1046	0	22004, 4134	22004, 4134	175	Chirstmas Village	135	0	el_talk29	0	
+//1	Cleaner	1	724	0	8404, 3734	8404, 3734	360	Chirstmas Village	135	0	el_talk30	0	
+//2	Chirstmas Tree	1	1042	0	14404, 16035	14404, 16035	354	Chirstmas Village	135	0	el_talk05	0	
+//3	Santa Claus	1	781	0	14400,16600	14400,16600	180	Chirstmas Village	135	0	Xmas_talk08	0	
+//4	Christmas Village Guide	1	772	0	14700, 13600	14700, 13600	270	Chirstmas Village	135	0	Xmas_talk25	0
+//5	Lincoln	1	10	0	20800, 22100	20800, 22100	90	Chirstmas Village	135	0	peter_talk27	0
+//6	Jenna	1	15	0	3401, 19901	3401, 19901	180	Chirstmas Village	135	0	peter_talk28	0
+//7	Tourist Yanu	1	405	0	6100, 4300	6100, 4300	180	Chirstmas Village	135	0	peter_talk04	0
+//8	Tourist Illidan	1	15	0	9600, 5100	9600, 5100	90	Chirstmas Village	135	0	peter_talk02	0
+//9	Tourist Loken	1	441	0	9200, 23900	9200, 23900	180	Chirstmas Village	135	0	peter_talk11	0
+//10	Captain Kali	1	12	0	25800, 25100	25800, 25100	268	Chirstmas Village	135	0	peter_talk09	0
+//11	Navy Soldier	1	410	0	19501, 3901	19501, 3901	180	Chirstmas Village	135	0	peter_talk10	0
+//12	Uncle Hoho	1	453	0	2800, 11900	2800, 11900	180	Chirstmas Village	135	0	peter_talk05	0
+//3	Christmas Clown	1	1046	0	4200, 4300	4200, 4300	180	Chirstmas Village	135	0	peter_talk01	0
+//14	Cerises Dad	1	440	0	8800, 4000	8800, 4000	180	Chirstmas Village	135	0	peter_talk03	0
+//15	Matchstick Grandpa	1	420	0	23400, 8900	23400, 8900	365	Chirstmas Village	135	0	peter_talk16	0
+//16	Stall Keeper Aden	1	17	0	21201, 20301	21201, 20301	90	Chirstmas Village	135	0	peter_talk20	0
+//17	Little Imp Sirin	1	403	0	22801, 5401	22801, 5401	180	Chirstmas Village	135	0	peter_talk21	0
+//18	Little Tail Cerise	1	1046	0	24101, 4301	24101, 4301	180	Chirstmas Village	135	0	peter_talk22	0
+//19	Little Girl Serene	1	441	0	19101, 4501	19101, 4501	90	Chirstmas Village	135	0	peter_talk23	0
+//20	Omi	1	421	0	20201, 6901	20201, 6901	270	Chirstmas Village	135	0	peter_talk24	0
+//21	Mark	1	409	0	19201, 21300	19201, 21300	78	Chirstmas Village	135	0	peter_talk26	0

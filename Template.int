@@ -1,0 +1,242 @@
+
+RegisterStaticType("struct IMAGE_DOS_HEADER  {  /* DOS .EXE header*/"+
+"    CHAR   e_magic[2];      /* Magic number*/"+
+"    USHORT e_cblp;          /* Bytes on last page of file*/"+
+"    USHORT e_cp;            /* Pages in file*/"+
+"    USHORT e_crlc;          /* Relocations*/"+
+"    USHORT e_cparhdr;       /* Size of header in paragraphs*/"+
+"    USHORT e_minalloc;      /* Minimum extra paragraphs needed*/"+
+"    USHORT e_maxalloc;      /* Maximum extra paragraphs needed*/"+
+"    USHORT e_ss;            /* Initial (relative) SS value*/"+
+"    USHORT e_sp;            /* Initial SP value*/"+
+"    USHORT e_csum;          /* Checksum*/"+
+"    USHORT e_ip;            /* Initial IP value*/"+
+"    USHORT e_cs;            /* Initial (relative) CS value*/"+
+"    USHORT e_lfarlc;        /* File address of relocation table*/"+
+"    USHORT e_ovno;          /* Overlay number*/"+
+"    USHORT e_res[4];        /* Reserved words*/"+
+"    USHORT e_oemid;         /* OEM identifier (for e_oeminfo)*/"+
+"    USHORT e_oeminfo;       /* OEM information; e_oemid specific*/"+
+"    USHORT e_res2[10];      /* Reserved words*/"+
+"    LONG   e_lfanew;        /* File address of new exe header*/"+
+"}");
+
+RegisterStaticType("struct IMAGE_FILE_HEADER  {  /* PE file header*/"+
+"    CHAR    Signature[4];"+
+"    USHORT  Machine;"+
+"    USHORT  NumberOfSections;"+
+"    ULONG   TimeDateStamp;"+
+"    ULONG   PointerToSymbolTable;"+
+"    ULONG   NumberOfSymbols;"+
+"    USHORT  SizeOfOptionalHeader;"+
+"    USHORT  Characteristics;"+
+"}");
+
+RegisterStaticType("struct IMAGE_OPTIONAL_HEADER  {  /* PE Optional Header*/"+
+"    /**/"+
+"    /* Standard fields.*/"+
+"    /**/"+
+"    USHORT  Magic;"+
+"    UCHAR   MajorLinkerVersion;"+
+"    UCHAR   MinorLinkerVersion;"+
+"    ULONG   SizeOfCode;"+
+"    ULONG   SizeOfInitializedData;"+
+"    ULONG   SizeOfUninitializedData;"+
+"    ULONG   AddressOfEntryPoint;"+
+"    ULONG   BaseOfCode;"+
+"    ULONG   BaseOfData;"+
+"    /**/"+
+"    /* NT additional fields.*/"+
+"    /**/"+
+"    ULONG   ImageBase;"+
+"    ULONG   SectionAlignment;"+
+"    ULONG   FileAlignment;"+
+"    USHORT  MajorOperatingSystemVersion;"+
+"    USHORT  MinorOperatingSystemVersion;"+
+"    USHORT  MajorImageVersion;"+
+"    USHORT  MinorImageVersion;"+
+"    USHORT  MajorSubsystemVersion;"+
+"    USHORT  MinorSubsystemVersion;"+
+"    ULONG   Reserved1;"+
+"    ULONG   SizeOfImage;"+
+"    ULONG   SizeOfHeaders;"+
+"    ULONG   CheckSum;"+
+"    USHORT  Subsystem;"+
+"    USHORT  DllCharacteristics;"+
+"    ULONG   SizeOfStackReserve;"+
+"    ULONG   SizeOfStackCommit;"+
+"    ULONG   SizeOfHeapReserve;"+
+"    ULONG   SizeOfHeapCommit;"+
+"    ULONG   LoaderFlags;"+
+"    ULONG   NumberOfRvaAndSizes;"+
+"}");
+
+RegisterStaticType("struct IMAGE_DATA_DIRECTORY  {   /* PE Data Directories*/"+
+"    ULONG   VirtualAddress;"+
+"    ULONG   Size;"+
+"}");
+
+RegisterStaticType("struct IMAGE_SECTION_HEADER  {   /* PE File Sections*/"+
+"    CHAR    Name[8];"+
+"    ULONG   VirtualSize;"+
+"    ULONG   VirtualAddress;"+
+"    ULONG   SizeOfRawData;"+
+"    ULONG   PointerToRawData;"+
+"    ULONG   PointerToRelocations;"+
+"    ULONG   PointerToLinenumbers;"+
+"    USHORT  NumberOfRelocations;"+
+"    USHORT  NumberOfLinenumbers;"+
+"    ULONG   Characteristics;"+
+"}");
+
+
+// Global counters
+var _textCount = 0;
+var _bssCount = 0;
+var _rsrcCount = 0;
+var _rdataCount = 0;
+var _dataCount = 0;
+var _edataCount = 0;
+var _idataCount = 0;
+var _pdataCount = 0;
+var _debugCount = 0;
+var _unknownCount = 0;
+var _skipCount = 0;
+
+// Document mapping entry point function
+
+function MainMapping()
+{
+    var bFinish, str, strName;
+    var i, j, nSize, nPos, nOfs, nCur, nSection;
+
+    // Define DOS header
+    Evaluate("IMAGE_DOS_HEADER DosHeader;");
+
+    // Check DOS .EXE Magic number
+    if (Evaluate("DosHeader.e_magic") != "MZ") {
+        Message("Invalid file format");	
+        return;
+    }
+
+    // Define Real-Mode Stub Program
+    nOfs = Evaluate("DosHeader.e_lfanew");
+    nPos = Evaluate("DosHeader.e_cparhdr");
+    nOfs -= nPos*16;
+    if (nOfs <= 0) {
+        Message("Invalid file format");	
+        return;
+    }
+	Evaluate("CHAR StubProgram[" + (nOfs) + "];");
+
+    // Define PE File Header
+    Evaluate("IMAGE_FILE_HEADER PEHeader;");
+
+    // Check PE signature
+    if (Evaluate("PEHeader.Signature") != "PE") {
+        Message("Invalid file format");	
+        return;
+    }
+
+    // Define PE Optional Header and Data Directory
+    Evaluate("IMAGE_OPTIONAL_HEADER OptionalHeader;");
+    Evaluate("IMAGE_DATA_DIRECTORY DataDirectory[" + (16) + "];");
+
+    // Define PE Section Header
+	nSection = Evaluate("PEHeader.NumberOfSections");
+    Evaluate("IMAGE_SECTION_HEADER SectionHeader[" + (nSection) + "];");
+
+    // Define PE Section Data
+    nSize = GetDocSize();
+    nCur = GetMappingPos();
+    bFinish = (nCur >= nSize || nSection <= 0);
+    while (!bFinish) {
+        nPos = 0x7fffffff;
+        for (i = 0; i < nSection; i ++) {
+            nOfs = Evaluate("SectionHeader[" + ( + i) + "]" + ".PointerToRawData");
+            if (nOfs >= nCur) {
+                if (nOfs < nPos) {
+                    nPos = nOfs;
+                    j = i;
+                }
+            }
+        }
+
+        if (nPos == 0x7fffffff) {
+            bFinish = true;
+            break;
+        }
+
+        if (nPos > nCur) {
+            _skipCount ++;
+            str = "BYTE skipData" + _skipCount + "[" + (nPos-nCur) + "];";
+            Evaluate(str);
+        }
+
+        strName = Evaluate("SectionHeader[" + ( + j) + "]" + ".Name");
+        nOfs = Evaluate("SectionHeader[" + ( + j) + "]" + ".SizeOfRawData");
+        if (nOfs <= 0) {
+            bFinish = true;
+            break;
+        }
+
+        switch (strName) {
+        case ".text":
+            _textCount ++;
+            str = "BYTE textSection" + _textCount + "[" + nOfs + "];";
+            break;
+
+        case ".bss":
+            _bssCount ++;
+            str = "BYTE bssSection" + _bssCount + "[" + nOfs + "];";
+            break;
+
+        case ".rsrc":
+            _rsrcCount ++;
+            str = "BYTE rsrcSection" + _rsrcCount + "[" + nOfs + "];";
+            break;
+
+        case ".rdata":
+            _rdataCount ++;
+            str = "BYTE rdataSection" + _rdataCount + "[" + nOfs + "];";
+            break;
+
+        case ".data":
+            _dataCount ++;
+            str = "BYTE dataSection" + _dataCount + "[" + nOfs + "];";
+            break;
+
+        case ".edata":
+            _edataCount ++;
+            str = "BYTE edataSection" + _edataCount + "[" + nOfs + "];";
+            break;
+
+        case ".idata":
+            _idataCount ++;
+            str = "BYTE idataSection" + _idataCount + "[" + nOfs + "];";
+            break;
+
+        case ".pdata":
+            _pdataCount ++;
+            str = "BYTE pdataSection" + _pdataCount + "[" + nOfs + "];";
+            break;
+
+        case ".debug":
+            _debugCount ++;
+            str = "BYTE debugSection" + _debugCount + "[" + nOfs + "];";
+            break;
+
+        default:
+            _unknownCount ++;
+            str = "BYTE unknownSection" + _unknownCount + "[" + nOfs + "];";
+            break;
+        }
+
+        Evaluate(str);
+        nCur = nPos + nOfs;
+        bFinish = (nCur >= nSize);
+    }
+}
+
+SetDocOnlineHelp("http://www.csn.ul.ie/~caolan/publink/winresdump/winresdump/doc/pefile2.html");
+MainMapping();

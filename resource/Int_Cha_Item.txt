@@ -1,0 +1,2 @@
+//ID	Class	Items ID given to new players (MAX of 6 itens)
+0	Newbie	289,641,8,854

@@ -1,0 +1,20 @@
+//Serial	NPC Name	NPC Type	Chrindex ID	Show Mini-map	Coordinates starting point	Coordination Goal	NPC placement	Region	Region ID	NPC Script	info manage	Test Status
+1	Teleporter - Maya		1	11	7	41225,65725	41225,65725	90	Dream Island	1	0	dream_01	0
+2	Nurse - Missy			1	29	3	40475,54875	40475,54875	180	Dream Island	1	0	heal_m02	0
+3	Banker - Hanna			1	16	0	44725,58575	44725,58575	180	Dream Island	1	0	bank_d01	0
+4	Banker - Jessica		1	16	0	33675,58725	33675,58725	180	Dream Island	1	0	bank_d02	0
+5	Bank Manager - Steve		1	415	0	44775,54575	44775,54575	180	Dream Island	1	0	bank_d03	0
+6	Secretary - John		1	14	0	43325,58425	43325,58425	180	Dream Island	1	0	secr_d01	0
+7	Horoscope Angel			1	1328	0	36575,54875	36575,54875	180	Dream Island	1	0	horoscope_01	0
+8	Blacksmith - Ben		1	21	1	36325,65325	36325,65325	0	Dream Island	1	0	bsmith_d01	0
+9	Grocer - Jill			1	408	12	38175,65225	38175,65225	0	Dream Island	1	0	grocer_d01	0
+10	Mafia - Corleone		1	1329	0	33625,54575	33625,54575	180	Dream Island	1	0	mafia_d01	0
+11	General Merchant - Chris	1	417	0	40675,56875	40675,56875	270	Dream Island	1	0	general_d01	0
+12	Ticket Merchant - Michael	1	425	0	39275,58325	39275,58325	180	Dream Island	1	0	ticket_d01	0
+13	Dream City Mayor - Jack		1	416	0	40825,59925	40825,59925	270	Dream Island	1	0	mayor_d01	0
+14	High Priest - Robert		1	23	0	34325,64075	34325,64075	90	Dream Island	1	0	priest_d01	0
+15	Child - Patrick			1	414	0	39325,62675	39325,62675	0	Dream Island	1	0	child_d01	0
+16	Oldman - Jeffery		1	420	0	36875,60125	36875,60125	90	Dream Island	1	0	oldman_d01	0
+17	Drunked Man - Isaac		1	10	0	43675,63275	43675,63275	270	Dream Island	1	0	drunk_d01	0
+18	Granny Mel			1	18	0	40425,63975	40425,63975	180	Dream Island	1	0	granny_d01	0
+19	Hotel Owner - Margaret		1	28	0	43875,65275	43875,65275	270	Dream Island	1	0	hotel_d01	0

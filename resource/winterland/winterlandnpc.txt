@@ -1,0 +1,23 @@
+//Serial	NPC Name	NPC Type	Chrindex ID	Show Mini-map	Coordinates starting point	Coordination Goal	NPC placement	Region	Region ID	NPC Script	info manage	Test Status
+1	Blacksmith - Ben	1	21	1	31000,87700	31000,87700	270	Winter Island	177	0	d_talk1	0
+2	Grocer - Eddie	1	19	12	32300,85800	32300,85800	180	Winter Island	177	0	d_talk2	0
+3	Physician Vegito	1	19	11	27600,87700	27600,87700	180	Winter Island	177	0	d_talk3	0
+4	Tailor - Dar	1	17	2	26000,83200	26000,83200	270	Winter Island	177	0	d_talk4	0
+6	Teleporter - Mary	1	400	7	24900,86400	24900,86400	180	Winter Island	177	0	d_talk6	0
+7	Harbour Operator - Luna	1	453	9	32200,94600	32900,94700	90	Winter Island	177	0	d_talk7	0
+8	William		1	1172	0	29700,90100	29700,90100	180	Winter Island	177	0	d_talk8	0
+9	Nurse Tsukino	1	419	3	25400,88100	25400,88100	270	Winter Island	177	0	d_talk28	0
+10	Builder Endymion	1	425	0	28300,92400	28300,92400	90	Winter Island	177	0	d_talk29	0
+11	Harbor Operatro - Sunny	1	453	9	69400,70400	69400,70400	90	Ñ©À­µº	179	0	d_talk9	0
+12	Explorer Winston	1	19	0	47200,53100	47200,53100	180	Ñ©À­µº	179	0	d_talk10	0
+14	Harbour Operator - Celtic	1	453	9	103900,61200	103900,61200	0	Ñ©Î¬µº	180	0	d_talk12	0
+15	Explorer - Chris	1	19	0	114700,40300	114700,40300	90	Ñ©Î¬µº	180	0	d_talk13	0
+17	Harbour Operator - Ruppert	1	453	9	25900,120000	25900,120000	270	¶¬ºþµº	181	0	d_talk15	0
+19	Explorer - Lion	1	421	0	36500,152600	36500,152600	90	¶¬ºþµº	181	0	d_talk17	0
+20	Explorer - Jill	1	425	0	95800,115900	95800,115900	180	¶¬ºþµº	181	0	d_talk18	0
+23	Head Explorer - Sarcosi	1	798	0	144000,126800	144000,126800	90	±ù·âµº	182	0	d_talk21	0
+//25	Lottery Seller - Peter	1	421	0	25000,91000	25000,91000	180	Winter Island	177	0	peter_talk001	0
+//26	Lottery Trader - Charles	1	415	0	25300,91000	25300,91000	180	Winter Island	177	0	peter_talk002	0
+//27	Lottery Shop	1	1075	0	25000,90700	25000,90700	180	Winter Island	177	0	0	0
+//28	China Wind	1	1072	0	24900,91000	24900,91000	180	Winter Island	177	0	peter_talk003	0
+29	Leyla	1	1171	0	29900,90100	29900,90100	180	Winter Island	177	0	d_talk31	0

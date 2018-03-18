@@ -1,0 +1,1 @@
+1	Boss Area Teleporter	1	100	9	13100,37100	13100,37100	90	Death Valley 2	88	0	dvalley_02	0

@@ -1,0 +1,25 @@
+//Serial	NPC Name	NPC Type	Chrindex ID	Show Mini-map	Coordinates starting point	Coordination Goal	NPC placement	Region	Region ID	NPC Script	info manage	Test Status
+1	Elizabeth	1	804	0	61653,96548	61653,96548	43	Treasure Gulf	103	0	l_talk04	0
+2	Wellington	1	798	0	104250,13477	104250,13477	114	Naval Base	102	0	l_talk03	0
+3	Jack Arrow	1	802	0	23088,57990	23088,57990	355	Skeletar Isle	101	0	l_talk02	0
+4	Mark Turner	1	803	0	51611,40767	51611,40767	301	Skeletar Isle	101	0	l_talk01	0
+5	Harbor Operator - Catchy	1	803	9	63133,92771	63133,92771	180	Treasure Gulf	103	0	mmm_talk05	0
+6	Harbor Operator - Penny	1	452	9	65815,99328	65815,99328	180	Treasure Gulf	103	0	mmm_talk06	0
+7	Seaport Commander	1	452	9	61212,62222	61212,62222	128	Skeletar Isle	101	0	mmm_talk07	0
+8	Mysterious Sailor	1	452	9	37011,16511	37011,16511	250	Skeletar Isle	101	0	mmm_talk08	0
+9	Seaport Commander	1	453	9	108211,21111	108211,21111	250	Naval Base	102	0	mmm_talk09	0
+10	Freights - Zabu	1	459	9	61267,94517	61267,94517	145	Treasure Gulf	103	0	mmm_talk10	0
+11	Heaven Teleporter	1	429	7	47411,105411	47411,105411	236	Treasure Gulf	103	0	mmm_talk12	0
+12	Dock Steward	1	423	7	125300,100100	125300,100100	95	Underground Dock	104	0	mmm_talk20	0
+13	Abaddon 1 Warden	1	423	7	19927,82473	19927,82473	90	Abaddon 1	107	0	mmm_talk22	0
+14	Abaddon 2 Warden	1	424	7	9073,81628	9073,81628	200	Abaddon 2	107	0	mmm_talk23	0
+15	Abaddon 3 Warden	1	425	7	7076,95272	7076,95272	42	Abaddon 3	107	0	mmm_talk24	0
+16	Abaddon 4 Warden	1	425	7	20913,95571	20913,95571	42	Abaddon 4	107	0	mmm_talk25	0
+17	Goddess	1	262	7	175520,90875	175520,90875	269	Heaven	103	0	mmm_talk30	0
+18	Rebirth Angel	1	284	7	175520,91475	175520,93875	269	Heaven	103	0	zsts_talk	0
+19	Locke's	1	829	0	15400,91200	15400,91200	150	地狱四层	107	0	el_talk23	0
+20	Bermuda Guardian	1	772	0	66900,106400	66900,106400	43	藏宝海湾	103	0	k_talk002	0
+21	Shion the Holy Father	1	23	7	174940,90279	174940,90279	230	Heaven	103	0	dina_talk10	0
+22	Little Angel	1	284	7	175440,90279	175440,90279	230	天堂	103	0	dina_talk11	0
+23	Blink	1	871	0	61900,96500	61900,96500	90	藏宝海湾	103	0	sds_talk05	0
+24	Yihui	1	874	0	33600,17400	33600,17400	180	地狱一层	107	0	sds_talk06	0

@@ -1,0 +1,36 @@
+1	Fiery Gem	0878	1	1	ItemHint_LieYanS
+2	Furious Gem	0879	2,3,7,9	1	ItemHint_ZhiYanS
+3	Explosive Gem	0880	4	1	ItemHint_HuoYaoS
+4	Lustrious Gem	0881	1,2,3,4,7,9,23	4	ItemHint_MaNaoS
+5	Glowing Gem	0882	11,22,27	2	ItemHint_HanYu
+6	Shining Gem	0883	11,22,27	4	ItemHint_YueZhiX
+7	Shadow Gem	0884	1,2,3,4,7,9,24	4	ItemHint_ShuiLingS
+8	Spirit Gem	0887	1,2,3,4,7,9,22,24,27	4	ItemHint_ShengGuangS
+9	Gem of the Wind	0860	24	4	ItemHint_FengLingS
+10	Gem of Striking	0861	3,4,23	4	ItemHint_YingYanS
+11	Gem of Colossus	0862	11,22,27	4	ItemHint_YanVitS
+12	Gem of Rage	0863	1,2,3,4,7,9	4	ItemHint_YanStrS
+13	Eye of Black Dragon	0864	1,2,3,4,7,9	1	ItemHint_LongZhiTong
+14	Soul of Black Dragon	0865	22,27	4	ItemHint_LongZhiHun
+15	Heart of Black Dragon	0866	23,24	4	ItemHint_LongZhiXin
+16	Gem of Soul	1012	1,2,3,4,7,9,22,23,27	4	ItemHint_GaNaZhiShen
+17	Yellow Jade	5750	20	4	ItemHint_HuangYu
+18	Red Jade	5751	20	4	ItemHint_ChiY
+19	Green Jade	5752	20	4	ItemHint_QingYu
+20	Chiatan's Aura	5771	20	4	ItemHint_XTLingGuang
+21	Lock's Hit	5772	23	4	ItemHint_LKBiZhong
+22	Bing's Dodging	5773	24	4	ItemHint_BBDuoShan
+23	Feng's Defense	5774	22,27,11	2	ItemHint_FFDiYu
+24	Shark's Strengthening	5775	22,27,11	4	ItemHint_XKQiangHua
+25	Azrael's Glare	5845	1,2,3,4,7,9	4	ItemHint_SShuiyao
+26	Undead Azrael	5846	11,22,27	4	ItemHint_SSbusi
+27	Azrael's Light	5847	1,2,3,4,7,9,22,23,27	4	ItemHint_SSguangmang
+28	Azrael's Aggregation	5848	3,4,23	4	ItemHint_SSningju
+29	Azrael's Dance	5849	24	4	ItemHint_SSxuanwu
+30	Attack Speed Diamond	3693	20	4	ItemHint_ATSPDI
+31	Movement Speed Diamond	3694	20	4	ItemHint_MOSPDI
+32	Great Gem of Rage	3721	1,2,3,4,7,9	4	ItemHint_Ggrage
+33	Great Gem of Soul	3722	1,2,3,4,7,9,22,23,27	4	ItemHint_Ggsoul
+34	Great Gem of Striking	3723	3,4,23		4	ItemHint_Ggstrike
+35	Great Gem of Colossus	3724	11,22,27	4	ItemHint_Ggcolo
+36	Great Gem of Wind	3725	24		4	ItemHint_Ggwind

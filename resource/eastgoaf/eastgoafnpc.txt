@@ -1,0 +1,2 @@
+1	Miner Drunky	1	440	0	29645,5725	29645,5725	264	Silver Mine 2	42	0	r_talk161	0
+2	Zombie - Hami	1	765	0	4913,24214	4913,24214	167	Spring Town	100	16	b_talk18	0

@@ -1,0 +1,51 @@
+// Map List
+//ID	Map File Name	Chinese Name	Display Switch Region or not	Initial Screen Coordinate Placing Character	Parallel light color	Parallel Light Direction
+1	garner	Ascaron	1	2202,2782	3,2202,2782	255,255,255
+2	magicsea	Magical Ocean	1	1350,550	3,1350,550	255,255,255
+3	darkblue	Deep Blue Islands	1	70,70	3,70,70	255,255,255
+4	lonetower	Lone Tower	0	50,50	3,50,50	255,255,255
+5	eastgoaf	Eastern Goaf	1	50,50	3,50,50	255,255,255
+6	secretgarden	Garden of Edel	0	50,50	3,50,50	255,255,255
+7	darkswamp	Dark Swamp	0	204,340	3,204,340	255,255,255
+8	abandonedcity	Forsaken City	0	308,311	3,308,311	255,255,255
+9	abandonedcity2	Forsaken City 2	0	150,150	3,50,50	255,255,255
+10	abandonedcity3	Forsaken City 3	0	150,150	3,50,50	255,255,255
+11	puzzleworld	Demonic World	0	1, 1	3,50,50	0,0,0
+12	puzzleworld2	Demonic World 2	0	1, 1	3,50,50	0,0,0
+13	teampk	Arena	0	1, 1	3,50,50	0,0,0
+14	jialebi	Caribbean	0	150,150	3,50,50	255,255,255	
+15	chaosarg	Chaos Argent(tweak)	0	1350,550	3,1350,550	255,255,255
+16	hell	Purgatory	0	1350,550	3,1350,550	0,0,0
+17	hell2	Drown	0	1350,550	3,1350,550	0,0,0
+18	hell3	Hades	0	191,179	3,191,179	0,0,0
+19	hell4	Gate of Despair	0	1350,550	3,1350,550	0,0,0
+20	hell5	Abaddon Eternal	0	29,85	3,29,85	0,0,0
+21	guildwar	Sacred War	0	1350,550	3,1350,550	255,255,255
+22	leiting2	Thundoria Mirage	0	1350,550	3,1350,550	255,255,255
+23	fcfarm	FC Farm Map	0	63,65	3,63,65	0,0,0
+24	dsfarm	DS Farm Map	0	63,65	3,63,65	0,0,0
+25	dwfarm	DW Farm Map	0	63,65	3,63,65	0,0,0
+26	yschurch	Church	0	1, 1	3,50,50	255,255,255
+27	07xmas	Christmas Village	1	1350,550	3,1350,550	0,0,0
+28	sdBoss	Boss Island	0	1350,550	3,1350,550	0,0,0
+29	07xmas2	2007 Converse Christmas Village	1	1350,550	3,1350,550	0,0,0
+30	prisonisland	Prison Island	0	1350,550	3,1350,550	255,255,255
+31	GuildHouse	Guild House	0	1, 1	3,50,50	0,0,0
+32	starena2	Arena B	0	1, 1	3,50,50	0,0,0
+33	starena3	Arena C	0	1, 1	3,50,50	0,0,0
+34	winterland	Winter Island	0	247,867		3,247,867	0,0,0
+35	mjing1	Aurora Maze	0	379,379	3,379,379	0,0,0
+36	mjing2	2nd Aurora Area	0	379,379	3,379,379	0,0,0
+37	mjing3	Dark Maze	0	325,121	3,325,121	0,0,0
+38	mjing4	2nd Dark Area	0	325,121	3,325,121	0,0,0
+39	puzzleworld3	Demonic World 3	0	1, 1	3,50,50	0,0,0
+40	bountypk	Bounty Hunter	0	1, 1	3,50,50	0,0,0
+41	starena14	Arena 1	0	50,50		3,50,50		0,0,0
+42	DreamIsland	Dream Island	0	1, 1	3,50,50	0,0,0
+43	starena23	Arena 2	0	50,50		3,50,50		0,0,0
+44	dvalley		Death Valley	0	1,1	3,50,50	0,0,0
+45	dvalley2	Death Valley 2	0	1,1	3,50,50	0,0,0
+46	starena33	Arena 3	0	50,50		3,50,50		0,0,0
+47	dvalley3	Death Valley 3	0	1,1	3,50,50	0,0,0
+48	starena35	Arena 3	0	1, 1	3,50,50	0,0,0
+49	PKmap	Arena Island	0	1, 1	3,50,50	255,255,255

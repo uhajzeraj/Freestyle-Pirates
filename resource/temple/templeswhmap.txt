@@ -1,0 +1,4 @@
+//Temple of Lilith portal list								
+//ID	binded entity ID	incident type	entity placement location	entity placement direction	Target map name	Target map location	Activate Determinant Requirement	Name
+1	193	1	8800,17700	-1	temple	9400,21600	1	to other side of temple
+2	193	1	9400,21600	-1	temple	8800,17700	1	to other side of temple							
