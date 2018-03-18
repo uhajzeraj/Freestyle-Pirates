@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<links width="0" height="0">
+    <item>
+        <img>images/Banner1.jpg</img>
+        <link>index.php?act=donate</link>
+    </item>
+    <item>
+        <img>images/Banner2.jpg</img>
+        <link>index.php?act=ranking</link>
+    </item>
+    <item>
+        <img>images/Banner3.jpg</img>
+        <link>index.php?act=shop&sact=mall</link>
+    </item>
+    <item>
+        <img>images/Banner4.jpg</img>
+        <link>index.php?act=shop&sact=award</link>
+    </item>
+    <item>
+        <img>images/Banner5.jpg</img>
+        <link>index.php?act=vote</link>
+    </item>
+</links>

@@ -1,0 +1,122 @@
+display:none; position:absolute; top:0; left:0; z-index:500; opacity: 0.6; filter:alpha(opacity=60); background-color:#000; overflow:hidden; cursor:pointer;
+
+.cluetip-item
+{
+	background-color:#000;
+	color:#FFFFFF;
+	margin:5px;
+	padding: 5px;
+	border: 1px solid #7BDAE5;	
+	position:absolute;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+	display:block;
+	font-size:10px;
+}
+
+.itemHolder {
+	background-color:#000;
+	color:#FFFFFF;
+	margin:5px;
+	padding: 5px;
+	border: 1px solid #7BDAE5;	
+	position:absolute;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+	display:block;
+	font-size:10px;
+}
+
+.heading
+{
+	width:100%;
+	display:table-row;
+	background: #361D04 url(http://localhost/web/desgin_1/images/shop/gradient_tcat.gif) repeat-x 0% 0%;
+	color: #E2B775;
+	font: normal normal bold 11px/normal Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h2.innerTitle {
+	background-image: url(../images/global/boxSprites.png);
+	background-position: -699px -4px;
+	margin-top:-10px;
+	margin-left:-9px;
+	color: #FEDDA9;
+	font-size: 10px;
+	font-weight: 700;
+	height: 32px;
+	line-height: 32px;
+	padding: 0px 15px;
+	text-indent: 0px;
+	width: 170px;
+}
+
+.name
+{
+	font-size:14px;
+	font-weight:bold;
+}
+
+.type
+{
+	width:100%;
+	text-align:right;
+	font-variant: small-caps;
+}
+
+.description
+{
+	margin-top:4px;
+	display: block;
+	color:black;
+	margin-left:5px;
+}
+
+.requirement
+{
+	display:block;
+	margin-top:8px;
+	margin-bottom:1px;
+	margin-left:5px;
+	border-top: 1px solid black;
+}
+
+.raceReq,
+.classReq
+{
+
+}
+
+.bonuslist {
+	border-top: 1px solid black;
+	display:block;
+	margin-top:8px;
+	margin-bottom:1px;
+}
+
+.bonus{
+	display:table-row;
+}
+
+.bonustype,.reqType{
+	display:table-cell;
+	font-weight:bold;
+	text-align:left;
+	width:150;
+}
+
+.bonusvalue, .reqValue{
+	display:table-cell;
+	text-align:right;
+	float:right;
+	width:170;
+}
+
+
+.price
+{
+	display:block;
+	width:100%;
+	text-align:right;
+	margin-top:8px;
+}

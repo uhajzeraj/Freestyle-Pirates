@@ -1,0 +1,23 @@
+﻿#popContent h3 { font:bold 11px Tahoma;margin:0 0 10px 0; padding:0 0 0 10px; background:url(/images/icon_dot1.gif) 0 3px no-repeat;}
+
+#popContent div.popBtmBtn{ text-align:center;border-top:1px solid #ccc;padding-top:15px;margin:5px 0 0 0; }
+#popContent table.topTBL { margin:5px 0 5px 0; }
+#popContent td.title { width:120px; background-color:#F3F5F8;text-align:right;padding:7px 10px 7px 0px;vertical-align:text-top;}
+#popContent td.textbox input ,
+#popContent td.textbox textarea { width:90%; }
+#popContent td.textbox textarea { font:normal 11px Vernada;height:50px; }
+
+
+
+table.popTBL td { padding:3px 5px 3px 5px; }
+table.popTBL td.popTitle { background-color:#F3F5F8; text-align:right; width:30%}
+table.popTBL td.popTextBox {background-color:#FFFFFF; width:70% ; text-align:left;}
+table.popTBL td.popTextBox  input { width:150px;}  
+
+table.popTBL td.popTextBox2 {background-color:#FFFFFF; width:70% ; text-align:left;}
+table.popTBL td.popTextBox2  input { width:15px; border:0px;}       
+
+table.popAccountTBL td { padding:3px 5px 3px 5px; }
+table.popAccountTBL td.popTitle { background-color:#F3F5F8; text-align:center; height:20px;}
+table.popAccountTBL td.popText { background-color:#FFFFFF; text-align:center; height:20px;}
+table.popAccountTBL td.popTextBox { text-align:left; width:auto; }

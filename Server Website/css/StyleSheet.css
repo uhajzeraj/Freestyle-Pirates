@@ -1,0 +1,21 @@
+﻿
+/************ GridView Table 설정 ***********************/
+    table.grvwTBL { border:1px solid #ccc;margin-top:0px;width:100%;}
+
+    /* 테이블 헤더 (타이틀) */
+    table.grvwTBL th /* table header */
+    {
+        background-color:#464646;
+        padding:8px 0px 8px 0px; 
+        border-bottom:solid 1px #313131;
+    }    
+    
+    table.grvwTBL td 
+    {   background-color:#3f3f3f;
+        padding:4px 0px 4px 0px;
+        border-bottom:solid 1px #313131;
+        text-align:center        
+    }     
+    table.grvwTBL.title { width:737px; background-color:#313131;}  
+    
+/************ GridView Table 설정 ***********************/
